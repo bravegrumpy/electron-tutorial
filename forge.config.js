@@ -1,5 +1,6 @@
 const { FusesPlugin } = require('@electron-forge/plugin-fuses');
 const { FuseV1Options, FuseVersion } = require('@electron/fuses');
+require('dotenv').config()
 
 module.exports = {
   packagerConfig: {
@@ -52,8 +53,9 @@ module.exports = {
                 owner: 'bravegrumpy',
                 name: 'electron-tutorial'
             },
+            authToken: process.env.GITHUB_TOKEN,
             prerelease: false,
-            draft: true
+            draft: false
         }
     }
   ],

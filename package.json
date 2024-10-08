@@ -1,6 +1,6 @@
 {
   "name": "my-electron-app",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "description": "tutorial electron app",
   "main": "main.js",
   "scripts": {
@@ -22,6 +22,7 @@
     "@electron-forge/plugin-fuses": "^7.5.0",
     "@electron-forge/publisher-github": "^7.5.0",
     "@electron/fuses": "^1.8.0",
+    "dotenv": "^16.4.5",
     "electron": "^32.1.2"
   },
   "dependencies": {
